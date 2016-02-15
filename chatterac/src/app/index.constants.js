@@ -5,6 +5,12 @@
   angular
     .module('chatterac')
     .constant('malarkey', malarkey)
-    .constant('moment', moment);
+    .constant('moment', moment)
+    .constant('proxyConfig', {
+      baseUrl: '/chat'
+    })
+    .constant('logCfg', {
+      debug: true
+    });
 
 })();
