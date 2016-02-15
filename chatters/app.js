@@ -81,14 +81,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-// todo - move the io stuff from www.js to here and bind the io to app (see SO article)
 app.io = socketIo;
 rooms(app);
-
-//app.socketIoAuthParams = {
-//  cookieParser: cookieParser,
-//  secret: expressSessionCfg.secret,
-//  store: expressSession
-//};
 
 module.exports = app;

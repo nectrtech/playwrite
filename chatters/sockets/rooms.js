@@ -1,10 +1,4 @@
-//var passportSocketIo = require('passport.socketio');
-// todo - passport impact - what happens with that here? How does socket.io operate with that? I think it goes in the main (app.js) file
 module.exports = function (app) {
-  //var io = require('socket.io')(http);
-
-  //io.use(passportSocketIo.authorize(socketIoAuthParams));
-
   app.io.on('connection', function (socket) {
     console.log('connection!');
     socket.on('create_room', function (roomInfo) {
