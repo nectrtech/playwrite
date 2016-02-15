@@ -9,13 +9,11 @@ var io = app.io;
 var debug = require('debug')('chatters:server');
 var http = require('http');
 
-//var rooms = require('../sockets/rooms')(http, app.socketIoAuthParams);
-
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '4000');
 app.set('port', port);
 
 /**
